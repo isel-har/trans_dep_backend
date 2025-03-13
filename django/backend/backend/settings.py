@@ -137,17 +137,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+
 
 DATABASES = {
     "default": dj_database_url.config(
         default=os.getenv('POSTGRES_CONNECTION'),
-        conn_max_age=600,  # Keeps connections open for better performance
+        conn_max_age=600,
     )
 }
 
@@ -184,25 +179,20 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 ENDPOINT = os.getenv('BASE_URL')
 
-# CORS_ALLOWED_HOSTS = [
-#     'https://localhost:8443',
-#     'http://127.0.0.1:8443',
-#     'https://127.0.0.1:3000',
-# ]
+FRONT_URL = os.getenv('FRONT_URL')
 
-# CORS_ALLOWED_ORIGINS = [
-#     'https://localhost:8443',
-#     'https://127.0.0.1:8443',
+CORS_ALLOWED_HOSTS = [
+    'https://localhost:8443',
+    'http://127.0.0.1:8443',
+    'https://127.0.0.1:3000',
+    FRONT_URL,
+]
 
-#     ENDPOINT,
-# ]
-
-# CORS_ORIGIN_WHITELIST = (
-#     'https://localhost:8443',
-#     'https://127.0.0.1:8443',
-#     'http://127.0.0.1:3000',
-#     ENDPOINT,
-# )
+CORS_ALLOWED_ORIGINS = [
+    'https://localhost:8443',
+    'https://127.0.0.1:8443',
+    FRONT_URL, 
+]
 
 CORS_ORIGIN_ALLOW_ALL = True
 

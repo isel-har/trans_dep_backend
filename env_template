@@ -11,6 +11,7 @@ TOTP=
 
 ### URLS
 BASE_URL=
+FRONT_URL=
 
 ## 42 Intra API keys
 CLIENT_ID=
