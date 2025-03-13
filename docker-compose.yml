@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  django:
+    build: ./django
+    image: django:backend
+    container_name: django
+    tty: true
+    stdin_open: true
+    env_file:
+      - .env
+    ports:
+      - 8000:8443
+    restart: always

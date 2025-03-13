@@ -1,0 +1,17 @@
+## postgres connection string
+POSTGRES_CONNECTION=
+ 
+#backend secret key
+SECRET_KEY=
+## Two factor authentication variables
+EMAIL_HOST=
+EMAIL_HOST_USER=
+EMAIL_HOST_PASSWORD=
+TOTP=
+
+### URLS
+BASE_URL=
+
+## 42 Intra API keys
+CLIENT_ID=
+CLIENT_SECRET=
