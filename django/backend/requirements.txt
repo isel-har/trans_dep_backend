@@ -9,4 +9,4 @@ requests
 channels
 pyotp
 pillow
-dj-database-url
+#dj-database-url
