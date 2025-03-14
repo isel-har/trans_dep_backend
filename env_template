@@ -16,3 +16,23 @@ FRONT_URL=
 ## 42 Intra API keys
 CLIENT_ID=
 CLIENT_SECRET=
+
+
+
+SECRET_KEY='django-insecure-14h-qt%b(5x4vg2rx1n!1suopg=(ixgg=)w-=%zf!lx5xpuue&'
+ 
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_HOST_USER='ismailhrb1337@gmail.com'
+EMAIL_HOST_PASSWORD='ndvfcnzxfghdvkkl'
+TOTP='2FApasswordfortrangenderxd'
+
+DB_USER='postgres'
+DB_PASSWORD='postgres'
+
+NEXT_PUBLIC_API_URL='https://api.intra.42.fr/oauth/authorize?client_id=u-s4t2ud-0b3e4bf7cb46a6d5a93d41ecd77681e77ebbd8024a89df1250c8ac1771dfcc44&'
+NEXT_PUBLIC_QUERY_URL='redirect_uri=https%3A%2F%2Flocalhost%3A8443%2Fget-token&response_type=code'
+
+CLIENT_ID='u-s4t2ud-0b3e4bf7cb46a6d5a93d41ecd77681e77ebbd8024a89df1250c8ac1771dfcc44'
+CLIENT_SECRET='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'
+
+
